@@ -1,0 +1,13 @@
+@media (min-width: @screen-lg) {
+	body{display:none;}
+	#exp .title{
+		top:-30px;
+		background:url(../img/expTitle.png) no-repeat;
+		width:758px;
+		height:103px;
+		left:40px;
+	}
+}
+@media (min-width: @screen-md) {
+		body{display:none;}
+}

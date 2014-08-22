@@ -1,0 +1,380 @@
+@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**RESET END**/
+/*
+	themeColor:#28b2df
+*/
+#wrap{
+	max-width:1366px;
+	margin:auto;
+}
+@font-face{
+	font-family:myriad;
+	src:url(../fonts/MyriadPro-Regular.otf);
+}
+@font-face{
+	font-family:bebas;
+	src:url(../fonts/BebasNeue.otf);
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+/*********HEAD*******/
+.header{
+	background:url(../img/tri.jpg) no-repeat 0 190px;
+	-moz-background-size:contain;
+	-webkit-background-size:contain;
+	background-size:contain;
+	position:relative;
+	min-height:841px;
+    overflow:hidden;
+}
+
+.header h1{
+	font:normal 56px bebas;
+	color:#5fa4a0;
+	text-transform:uppercase;
+	position:absolute;
+	left:70px;
+	top:68px;
+	width:445px;
+    z-index:100;
+}
+.header p.fname{
+    font:normal 117px bebas;
+    color:#fff;
+    position:absolute;
+    left:70px;
+    top:33%;
+}
+.header figure{
+    border-radius:50%;
+    background:#fff;
+    position:absolute;
+    right:10%;
+    top:23%;
+    overflow:hidden;
+    height:300px;
+    width:300px;
+}
+.header figure img{
+    width:100%;
+    height:100%;
+}
+nav{
+	font:normal 16px myriad;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	right:93px;
+}
+nav ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+nav ul li{
+	float:left;
+	text-align:center;
+	height:110px;
+	width:106px;
+	margin-left:2px;
+	cursor:pointer;
+}
+nav ul li a{
+	text-decoration:none;
+	padding:10px 10px 0 10px;
+	height:100%;
+	height:100%;
+	display:block;
+	color:#000;
+	background:url(../img/nav-sprite.png) no-repeat left top;
+	}
+nav ul li a:hover{
+	color:#fff;
+	text-decoration:none;
+}
+nav ul li:nth-child(1) a{
+	background-position:0 top !important;
+}
+nav ul li:nth-child(2) a{
+	background-position:-109px top !important;
+	font-weight:bold;
+}
+nav ul li:nth-child(3) a{
+	background-position:-218px top !important;
+}
+nav ul li:nth-child(4) a{
+	background-position:-328px top !important;
+}
+nav ul li:nth-child(5) a{
+	background-position:-436px top !important;
+}
+nav ul li:nth-child(1):hover a{
+	background-position:0 bottom !important;
+}
+nav ul li:nth-child(2):hover a{
+	background-position:-109px bottom !important;
+}
+nav ul li:nth-child(3):hover a{
+	background-position:-218px bottom !important;
+}
+nav ul li:nth-child(4):hover a{
+	background-position:-328px bottom !important;
+}
+nav ul li:nth-child(5):hover a{
+	background-position:-436px bottom !important;
+}
+#ludwigInfo{
+	background:#fff;
+	position:absolute;
+	right:81px;
+	bottom:64px;
+	width:450px;
+}
+#ludwigInfo > div{
+	overflow:hidden;
+	border-bottom:1px solid #a6a6a6;
+}
+#ludwigInfo p.fl{
+	background:#3b3b3b;
+	text-align:center;
+	text-transform:uppercase;
+	font:normal 17px/48px myriad;
+	color:#fff;
+	width:30%;
+}
+#ludwigInfo p.fr{
+	font:normal 17px/48px myriad;
+	color:#000;
+	width:65%;
+}
+.bubble{
+	position:absolute;
+	left:280px;
+	bottom:2px;
+	background:url(../img/bubble.png) no-repeat;
+	padding-top:34px;
+	width:333px;
+	height:334px;
+	font:normal 37px myriad;
+	text-align:center;
+	color:#fff;
+}
+.bubble a{
+	font:italic 19px myriad;
+	color:#fff;
+	text-decoration:underline;
+}
+/*********HEAD*******/
+p.title{
+	position:relative;
+	left:40px;
+	text-indent:-9999px;
+	background-size:100% auto;
+}
+p.listTitle{
+	color:#5fa4a0;
+	margin:10px 0;
+}
+.content{
+	padding:0 40px 80px 40px;
+	margin:auto;
+	font:normal 1.563em myriad;
+	color:#fff;
+}
+.content ul{
+	margin-bottom:40px;
+}
+.content li{
+	list-style-type:square;
+}
+#summary,#exp{
+	background:#3b3b3b;
+}
+#summary p.title{
+	top:-30px;
+	background:url(../img/summaryTitle.png) no-repeat;
+	width:406px;
+	height:103px;
+}
+#skill,#reference{
+	background:#de5421;
+	position:relative;
+}
+#skill p.title{
+	top:-37px;
+	background:url(../img/skillsTitle.png) no-repeat;
+	width:420px;
+	height:117px;
+}
+#lang,#educ{
+	background:#fff;
+}
+#lang .title{
+	top:-37px;
+	background:url(../img/langTitle.png) no-repeat;
+	width:420px;
+	height:117px;
+}
+#lang .content,#educ .content{
+	color:#333;
+}
+#exp .title{
+	top:-30px;
+	background:url(../img/expTitle.png) no-repeat;
+	width:758px;
+	height:103px;
+}
+#educ .title{
+	top:-37px;
+	background:url(../img/educTitle.png) no-repeat;
+	width:748px;
+	height:117px;
+}
+#reference .title{
+	top:-37px;
+	background:url(../img/refTitle.png) no-repeat;
+	width:440px;
+	height:117px;
+}
+.bubblebot{
+	background:url(../img/bubblebot.jpg) no-repeat;
+	padding:30px 0 0 0;
+	width:312px;
+	height:313px;
+	position:absolute;
+	top:-83px;
+	right:90px;
+	font:normal 37px myriad;
+	text-align:center;
+	color:#28b2df;
+}
+.bubblebot a{
+	font:italic 19px myriad;
+	color:#28b2df;
+	text-decoration:underline;
+}
+@media (max-width: 1024px) {
+	.header{
+		min-height:741px;
+	}
+	#ludwigInfo{
+		right:5%;
+		bottom:15%;
+	}
+	.bubble{
+		left:8%;
+		bottom:10%;
+		background-size:100% auto;
+		font-size:150%;
+		width:233px;
+		height:234px;
+		}
+	nav{
+		right:5px;
+		top:2%;
+	}
+	.bubblebot{
+		background-size:100% auto;
+		width:212px;
+		height:213px;
+		top:-90px;
+		font-size:150%;
+	}
+	.header h1{
+		width: auto;
+		font-size:250%;
+		top:18%;
+		left:5%
+		}
+	
+} 
+@media (max-width: 481px) {
+	.header{
+		min-height:600px !important;
+	}
+	.header h1{
+		font-size:150% !important;
+		width:100% ;
+		text-align:center;
+		top:150px !important;
+		}
+	.content{
+		font-size:100%;
+	}
+	p.title{
+		left:0;
+	}
+	#ludwigInfo{
+		bottom:10%;
+		width:100%;
+		
+	}
+	#ludwigInfo p.fl,
+	#ludwigInfo p.fr{
+		font-size:12px;
+	}
+	#summary p.title,
+	#skill p.title,
+	#lang p.title,
+	#exp p.title,
+	#educ p.title,
+	#reference p.title{
+	background-size:contain;
+	width:100% !important;
+	height:50px !important;
+}
+	nav{
+		position:static !important;
+	}
+}
